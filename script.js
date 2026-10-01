@@ -1,23 +1,18 @@
 function checkResult() {
+    const hallTicket = document.getElementById("hallTicket").value.trim();
+    const result = document.getElementById("result");
 
-    let hallTicket =
-        document.getElementById("hallTicket").value.trim();
-
-    let result =
-        document.getElementById("result");
+    if (hallTicket === "") {
+        result.innerHTML = "<p class='error'>Please enter your Hall Ticket Number.</p>";
+        return;
+    }
 
     if (hallTicket === "23CSE001") {
-
-        result.innerHTML =
-            "<h3>Result Found</h3>" +
-            "<p><b>Student Name:</b> Satwik</p>" +
-            "<p><b>Course:</b> Computer Engineering</p>" +
-            "<p><b>Semester:</b> 2nd Semester</p>" +
-            "<p><b>Result:</b> PASS</p>";
-
+        result.innerHTML = `
+            <h3>Result Found!</h3>
+            <img src="meme.jpg" class="meme">
+        `;
     } else {
-
-        result.innerHTML =
-            "<p>❌ Hall Ticket Number not found.</p>";
+        result.innerHTML = "<p class='error'>Hall Ticket Number not found.</p>";
     }
 }

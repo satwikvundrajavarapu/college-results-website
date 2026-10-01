@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>College Results</title>
-
+    <title>ANKU University - 2nd Semester Results</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>ANKU UNIVERSITY</h1>
-<p>2nd Semester Results Portal</p>    </header>
+<header>
+    <img src="logo.png" class="logo">
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Results</a>
-        <a href="#">Contact</a>
-    </nav>
+    <h1>ANKU UNIVERSITY</h1>
+    <p>2nd Semester Results Portal</p>
+</header>
 
-    <main>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Results</a>
+    <a href="#">Contact</a>
+</nav>
 
-        <h2>2nd Semester Examination Results</h2>
+<section class="result-box">
 
-        <p>Enter your Hall Ticket Number</p>
+    <h2>2nd Semester Examination Results</h2>
 
-        <input
-            type="text"
-            id="hallTicket"
-            placeholder="Enter Hall Ticket Number"
-        >
+    <p>Enter your Hall Ticket Number</p>
 
-        <button onclick="checkResult()">
-            View Result
-        </button>
+    <input
+        type="text"
+        id="hallTicket"
+        placeholder="Enter Hall Ticket Number"
+    >
 
-        <div id="result"></div>
+    <br>
 
-    </main>
+    <button onclick="checkResult()">
+        View Result
+    </button>
 
-    <script src="script.js"></script>
+    <div id="result"></div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
