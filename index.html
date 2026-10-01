@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Results</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC COLLEGE</h1>
+        <p>Student Results Portal</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Results</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <h2>2nd Semester Examination Results</h2>
+
+        <p>Enter your Hall Ticket Number</p>
+
+        <input
+            type="text"
+            id="hallTicket"
+            placeholder="Enter Hall Ticket Number"
+        >
+
+        <button onclick="checkResult()">
+            View Result
+        </button>
+
+        <div id="result"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
